@@ -1,0 +1,198 @@
+{
+  "DoH2020": {
+    "250": {
+      "0.2": {
+        "baseline": 0.8985,
+        "ct_only": 0.9562,
+        "standard": 0.9219,
+        "vlm": 0.9221
+      },
+      "0.3": {
+        "baseline": 0.8055,
+        "ct_only": 0.8723,
+        "standard": 0.8667,
+        "vlm": 0.8624
+      },
+      "0.4": {
+        "baseline": 0.6667,
+        "ct_only": 0.7311,
+        "standard": 0.7448,
+        "vlm": 0.7332
+      },
+      "0.45": {
+        "baseline": 0.5955,
+        "ct_only": 0.6259,
+        "standard": 0.6232,
+        "vlm": 0.6098
+      },
+      "0.5": {
+        "baseline": 0.5124,
+        "ct_only": 0.5178,
+        "standard": 0.5283,
+        "vlm": 0.5212
+      }
+    },
+    "500": {
+      "0.2": {
+        "baseline": 0.9153,
+        "ct_only": 0.9723,
+        "standard": 0.9395,
+        "vlm": 0.9399
+      },
+      "0.3": {
+        "baseline": 0.8331,
+        "ct_only": 0.9159,
+        "standard": 0.9138,
+        "vlm": 0.9023
+      },
+      "0.4": {
+        "baseline": 0.6862,
+        "ct_only": 0.7814,
+        "standard": 0.8309,
+        "vlm": 0.8053
+      },
+      "0.45": {
+        "baseline": 0.6047,
+        "ct_only": 0.6628,
+        "standard": 0.6907,
+        "vlm": 0.6938
+      },
+      "0.5": {
+        "baseline": 0.5044,
+        "ct_only": 0.5138,
+        "standard": 0.5469,
+        "vlm": 0.5491
+      }
+    },
+    "1000": {
+      "0.2": {
+        "baseline": 0.9289,
+        "ct_only": 0.9774,
+        "standard": 0.9559,
+        "vlm": 0.9567
+      },
+      "0.3": {
+        "baseline": 0.8485,
+        "ct_only": 0.9218,
+        "standard": 0.9279,
+        "vlm": 0.9195
+      },
+      "0.4": {
+        "baseline": 0.7028,
+        "ct_only": 0.7766,
+        "standard": 0.807,
+        "vlm": 0.7744
+      },
+      "0.45": {
+        "baseline": 0.61,
+        "ct_only": 0.6558,
+        "standard": 0.7003,
+        "vlm": 0.6655
+      },
+      "0.5": {
+        "baseline": 0.5017,
+        "ct_only": 0.4951,
+        "standard": 0.5053,
+        "vlm": 0.5062
+      }
+    }
+  },
+  "Gotham2025": {
+    "250": {
+      "0.2": {
+        "baseline": 0.9438,
+        "ct_only": 0.9669,
+        "standard": 0.9616,
+        "vlm": 0.9581
+      },
+      "0.3": {
+        "baseline": 0.8833,
+        "ct_only": 0.9129,
+        "standard": 0.9097,
+        "vlm": 0.9332
+      },
+      "0.4": {
+        "baseline": 0.7505,
+        "ct_only": 0.8069,
+        "standard": 0.791,
+        "vlm": 0.7874
+      },
+      "0.45": {
+        "baseline": 0.6429,
+        "ct_only": 0.6959,
+        "standard": 0.7061,
+        "vlm": 0.7002
+      },
+      "0.5": {
+        "baseline": 0.5501,
+        "ct_only": 0.5687,
+        "standard": 0.5427,
+        "vlm": 0.5339
+      }
+    },
+    "500": {
+      "0.2": {
+        "baseline": 0.9603,
+        "ct_only": 0.9791,
+        "standard": 0.9665,
+        "vlm": 0.9784
+      },
+      "0.3": {
+        "baseline": 0.9322,
+        "ct_only": 0.934,
+        "standard": 0.9086,
+        "vlm": 0.9078
+      },
+      "0.4": {
+        "baseline": 0.819,
+        "ct_only": 0.8441,
+        "standard": 0.8552,
+        "vlm": 0.8467
+      },
+      "0.45": {
+        "baseline": 0.7048,
+        "ct_only": 0.7236,
+        "standard": 0.767,
+        "vlm": 0.7597
+      },
+      "0.5": {
+        "baseline": 0.5418,
+        "ct_only": 0.526,
+        "standard": 0.511,
+        "vlm": 0.4855
+      }
+    },
+    "1000": {
+      "0.2": {
+        "baseline": 0.9712,
+        "ct_only": 0.9788,
+        "standard": 0.9801,
+        "vlm": 0.9783
+      },
+      "0.3": {
+        "baseline": 0.9438,
+        "ct_only": 0.9526,
+        "standard": 0.943,
+        "vlm": 0.9433
+      },
+      "0.4": {
+        "baseline": 0.8333,
+        "ct_only": 0.8437,
+        "standard": 0.8558,
+        "vlm": 0.8642
+      },
+      "0.45": {
+        "baseline": 0.6985,
+        "ct_only": 0.7371,
+        "standard": 0.7518,
+        "vlm": 0.7375
+      },
+      "0.5": {
+        "baseline": 0.4637,
+        "ct_only": 0.5162,
+        "standard": 0.5074,
+        "vlm": 0.495
+      }
+    }
+  }
+}

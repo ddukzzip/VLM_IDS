@@ -1,0 +1,1682 @@
+[
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p030_N1000_s2_w1.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 201,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 11, 13] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [11, 17, 19] / bin: [31, 32, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=65.419)\nnoisy 의심: benign 37.3% / malicious 4.1%\n실제 noisy label 비율: 19.8%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.19811320754716982
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p030_N1000_s0_w4.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 4,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 13] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [11, 12, 15] / bin: [34, 35, 37]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 26] / bin: [6, 7, 13]\n\nbe/ma 분리도: 불명확 (overlap=62.599)\nnoisy 의심: benign 38.2% / malicious 0.5%\n실제 noisy label 비율: 13.0%\n\n판단: DoH2020 feature 0-26에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.12971698113207547
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p025_N1000_s15_w2.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.25,
+    "n_sample": 500,
+    "seed": 1502,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 25% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 5, 6] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [2, 3, 4]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [25, 26, 31] / bin: [0, 17, 18]\n\nbe/ma 분리도: 불명확 (overlap=41.817)\nnoisy 의심: benign 36.4% / malicious 0.5%\n실제 noisy label 비율: 14.6%\n\n판단: Gotham2025 feature 25-31에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.14617169373549885
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p030_N1000_s2_w1.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 201,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 6, 7] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [0, 6, 7] / bin: [4, 5, 6]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [13, 24, 30] / bin: [2, 3, 6]\n\nbe/ma 분리도: 불명확 (overlap=34.355)\nnoisy 의심: benign 37.6% / malicious 0.0%\n실제 noisy label 비율: 20.1%\n\n판단: Gotham2025 feature 13-30에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.20093457943925233
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N1000_s1_w3.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 103,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 8, 13] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [21, 23, 27] / bin: [1, 37, 38]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=48.605)\nnoisy 의심: benign 15.1% / malicious 23.3%\n실제 noisy label 비율: 34.4%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3443396226415094
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p025_N1000_s3_w2.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.25,
+    "n_sample": 500,
+    "seed": 302,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 25% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [2, 3, 4] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [20, 21, 22] / bin: [4, 43, 45]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 20, 28] / bin: [0, 6, 7]\n\nbe/ma 분리도: 불명확 (overlap=40.705)\nnoisy 의심: benign 36.9% / malicious 0.0%\n실제 noisy label 비율: 17.5%\n\n판단: Gotham2025 feature 0-28에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.175
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p030_N500_s6.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 6,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 5, 6] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 7, 16] / bin: [12, 13, 16]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 26] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=24.303)\nnoisy 의심: benign 69.7% / malicious 2.5%\n실제 noisy label 비율: 18.1%\n\n판단: Gotham2025 feature 0-26에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.18077803203661327
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p030_N1000_s11_w4.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 1104,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [2, 3, 5] / bin: [0, 1, 27]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 16, 20] / bin: [36, 37, 42]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 22, 23] / bin: [0, 3, 5]\n\nbe/ma 분리도: 불명확 (overlap=38.358)\nnoisy 의심: benign 0.4% / malicious 48.9%\n실제 noisy label 비율: 17.2%\n\n판단: Gotham2025 feature 0-23에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.17176470588235293
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N1000_s16_w2.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 1602,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 13, 16] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [4, 8, 9] / bin: [0, 1, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 12] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=43.282)\nnoisy 의심: benign 3.4% / malicious 36.1%\n실제 noisy label 비율: 37.7%\n\n판단: DoH2020 feature 0-12에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.37735849056603776
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p035_N500_s14.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.35,
+    "n_sample": 500,
+    "seed": 14,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 35% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [6, 7, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [21, 23, 37] / bin: [36, 37, 38]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 10] / bin: [3, 5, 6]\n\nbe/ma 분리도: 불명확 (overlap=51.073)\nnoisy 의심: benign 26.8% / malicious 13.3%\n실제 noisy label 비율: 23.6%\n\n판단: DoH2020 feature 0-10에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.2358490566037736
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p020_N1000_s2_w3.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 203,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 9, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [15, 17, 19] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=64.618)\nnoisy 의심: benign 37.1% / malicious 4.1%\n실제 noisy label 비율: 9.4%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.09433962264150944
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p045_N1000_s4_w3.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.45,
+    "n_sample": 500,
+    "seed": 403,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 45% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 9, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [35, 43, 49] / bin: [30, 31, 32]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 12] / bin: [2, 3, 5]\n\nbe/ma 분리도: 불명확 (overlap=64.726)\nnoisy 의심: benign 40.3% / malicious 2.6%\n실제 noisy label 비율: 34.2%\n\n판단: DoH2020 feature 0-12에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3419811320754717
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p035_N1000_s16_w4.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.35,
+    "n_sample": 500,
+    "seed": 1604,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 35% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 9] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [35, 42, 49] / bin: [15, 17, 18]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 20, 26] / bin: [0, 5, 7]\n\nbe/ma 분리도: 불명확 (overlap=68.424)\nnoisy 의심: benign 35.7% / malicious 0.0%\n실제 noisy label 비율: 25.9%\n\n판단: DoH2020 feature 0-26에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.25882352941176473
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p035_N1000_s2.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.35,
+    "n_sample": 1000,
+    "seed": 2,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 35% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [3, 4, 5] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [7, 15, 16]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 4, 8] / bin: [3, 5, 6]\n\nbe/ma 분리도: 불명확 (overlap=33.598)\nnoisy 의심: benign 39.7% / malicious 0.0%\n실제 noisy label 비율: 25.4%\n\n판단: Gotham2025 feature 0-8에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.25431530494821636
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N1000_s16_w1.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 1601,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 9, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [4, 23, 43] / bin: [31, 32, 33]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [1, 12, 30] / bin: [1, 2, 6]\n\nbe/ma 분리도: 불명확 (overlap=76.894)\nnoisy 의심: benign 36.5% / malicious 4.2%\n실제 noisy label 비율: 35.6%\n\n판단: DoH2020 feature 1-30에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3561320754716981
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p045_N250_s10.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.45,
+    "n_sample": 250,
+    "seed": 10,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 45% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [0, 2, 3] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [2, 47, 49] / bin: [0, 24, 25]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [3, 6, 7] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=24.767)\nnoisy 의심: benign 0.0% / malicious 41.1%\n실제 noisy label 비율: 47.2%\n\n판단: Gotham2025 feature 3-7에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.4719626168224299
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p025_N1000_s5_w3.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.25,
+    "n_sample": 500,
+    "seed": 503,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 25% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [4, 19, 33] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 10] / bin: [5, 6, 7]\n\nbe/ma 분리도: 불명확 (overlap=66.522)\nnoisy 의심: benign 38.8% / malicious 0.0%\n실제 noisy label 비율: 6.8%\n\n판단: DoH2020 feature 0-10에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.06839622641509434
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p040_N500_s14.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 14,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [1, 2, 3] / bin: [0, 2, 5]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 16] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=33.257)\nnoisy 의심: benign 54.7% / malicious 0.5%\n실제 noisy label 비율: 30.7%\n\n판단: Gotham2025 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.30679156908665106
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p045_N1000_s10.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.45,
+    "n_sample": 1000,
+    "seed": 10,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 45% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [7, 8, 9] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [10, 11, 12]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=27.033)\nnoisy 의심: benign 41.2% / malicious 0.0%\n실제 noisy label 비율: 41.5%\n\n판단: Gotham2025 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.4152046783625731
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p020_N1000_s12_w1.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 1201,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [2, 3, 4] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 16] / bin: [10, 11, 12]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [24, 25, 26] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=32.039)\nnoisy 의심: benign 4.3% / malicious 39.7%\n실제 noisy label 비율: 10.1%\n\n판단: Gotham2025 feature 24-26에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.10141509433962265
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p045_N250_s11.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.45,
+    "n_sample": 250,
+    "seed": 11,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 45% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [6, 7, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [14, 15, 17] / bin: [0, 1, 11]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [2, 4, 13] / bin: [0, 1, 3]\n\nbe/ma 분리도: 불명확 (overlap=69.150)\nnoisy 의심: benign 1.7% / malicious 44.6%\n실제 noisy label 비율: 50.9%\n\n판단: DoH2020 feature 2-13에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.5094339622641509
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p040_N1000_s19.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.4,
+    "n_sample": 1000,
+    "seed": 19,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 40% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [7, 10, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [0, 8, 9]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [15, 23, 26] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=34.422)\nnoisy 의심: benign 0.0% / malicious 42.9%\n실제 noisy label 비율: 28.8%\n\n판단: Gotham2025 feature 15-26에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.28835063437139563
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p030_N1000_s7.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.3,
+    "n_sample": 1000,
+    "seed": 7,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 30% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [19, 27, 35] / bin: [40, 41, 42]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 30] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=66.266)\nnoisy 의심: benign 42.4% / malicious 1.1%\n실제 noisy label 비율: 18.5%\n\n판단: DoH2020 feature 0-30에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.18470588235294116
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p020_N1000_s11_w2.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 1102,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [4, 17, 19] / bin: [32, 39, 40]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [3, 5, 6]\n\nbe/ma 분리도: 불명확 (overlap=63.272)\nnoisy 의심: benign 39.6% / malicious 2.3%\n실제 noisy label 비율: 7.3%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.07311320754716981
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p030_N1000_s10_w4.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 1004,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 5, 6] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [28, 29, 31] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=44.972)\nnoisy 의심: benign 37.5% / malicious 0.0%\n실제 noisy label 비율: 16.2%\n\n판단: Gotham2025 feature 28-31에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.1623529411764706
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p020_N1000_s11_w2.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 1102,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 6, 7] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [3, 5, 6] / bin: [0, 11, 14]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [25, 26, 31] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=39.987)\nnoisy 의심: benign 43.6% / malicious 0.0%\n실제 noisy label 비율: 10.7%\n\n판단: Gotham2025 feature 25-31에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.10657596371882086
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p020_N1000_s16.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.2,
+    "n_sample": 1000,
+    "seed": 16,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 20% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [2, 3, 7] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 16] / bin: [7, 10, 11]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 30, 31] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=35.215)\nnoisy 의심: benign 43.8% / malicious 0.0%\n실제 noisy label 비율: 7.2%\n\n판단: Gotham2025 feature 0-31에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.07168037602820211
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p020_N1000_s3.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.2,
+    "n_sample": 1000,
+    "seed": 3,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 20% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [2, 3, 7] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [11, 12, 13]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [1, 25, 26] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=34.001)\nnoisy 의심: benign 38.1% / malicious 1.5%\n실제 noisy label 비율: 7.3%\n\n판단: Gotham2025 feature 1-26에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.07294117647058823
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N1000_s3_w3.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 303,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [10, 11, 13] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 20] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=79.832)\nnoisy 의심: benign 33.5% / malicious 0.6%\n실제 noisy label 비율: 29.5%\n\n판단: DoH2020 feature 0-20에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.294811320754717
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N250_s10.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 250,
+    "seed": 10,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 8] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [16, 27, 29] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [1, 10, 30] / bin: [2, 3, 5]\n\nbe/ma 분리도: 불명확 (overlap=69.110)\nnoisy 의심: benign 42.6% / malicious 0.0%\n실제 noisy label 비율: 40.6%\n\n판단: DoH2020 feature 1-30에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.4056603773584906
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p020_N500_s15.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 15,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [0, 3, 5] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 16] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [8, 35, 36] / bin: [14, 15, 17]\n\nbe/ma 분리도: 불명확 (overlap=49.897)\nnoisy 의심: benign 45.5% / malicious 0.0%\n실제 noisy label 비율: 5.0%\n\n판단: Gotham2025 feature 8-36에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.05045871559633028
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p020_N500_s7.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 7,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 11, 13] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [15, 17, 19] / bin: [28, 29, 30]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 12] / bin: [12, 13, 15]\n\nbe/ma 분리도: 불명확 (overlap=64.511)\nnoisy 의심: benign 40.9% / malicious 0.9%\n실제 noisy label 비율: 6.4%\n\n판단: DoH2020 feature 0-12에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.06367924528301887
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p045_N1000_s16.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.45,
+    "n_sample": 1000,
+    "seed": 16,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 45% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [7, 12, 13] / bin: [0, 1, 27]\n\nCH2(malicious) 집중 구간:\n  feature: [3, 5, 6] / bin: [7, 8, 9]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [2, 4, 8] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=34.777)\nnoisy 의심: benign 60.3% / malicious 0.0%\n실제 noisy label 비율: 36.4%\n\n판단: Gotham2025 feature 2-8에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3638470451911935
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p035_N500_s10.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.35,
+    "n_sample": 500,
+    "seed": 10,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 35% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [2, 3, 6] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [16, 18, 20] / bin: [2, 3, 4]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [2, 3, 24] / bin: [0, 5, 24]\n\nbe/ma 분리도: 불명확 (overlap=40.205)\nnoisy 의심: benign 34.4% / malicious 0.0%\n실제 noisy label 비율: 21.5%\n\n판단: Gotham2025 feature 2-24에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.21495327102803738
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p045_N1000_s14_w1.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.45,
+    "n_sample": 500,
+    "seed": 1401,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 45% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 6, 9] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 16] / bin: [1, 2, 4]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 2, 13] / bin: [1, 3, 4]\n\nbe/ma 분리도: 불명확 (overlap=30.911)\nnoisy 의심: benign 41.6% / malicious 0.0%\n실제 noisy label 비율: 45.2%\n\n판단: Gotham2025 feature 0-13에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.45176470588235296
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p025_N1000_s12_w2.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.25,
+    "n_sample": 500,
+    "seed": 1202,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 25% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [4, 7, 8] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 16] / bin: [15, 16, 17]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 48] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=36.029)\nnoisy 의심: benign 49.5% / malicious 0.4%\n실제 noisy label 비율: 12.6%\n\n판단: Gotham2025 feature 0-48에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.12558139534883722
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p025_N1000_s13_w2.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.25,
+    "n_sample": 500,
+    "seed": 1302,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 25% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [6, 7, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [25, 33, 39] / bin: [35, 36, 37]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=60.427)\nnoisy 의심: benign 39.2% / malicious 2.3%\n실제 noisy label 비율: 11.3%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.11320754716981132
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p040_N1000_s5_w4.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 504,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 7, 12] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [2, 7, 8] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 5, 6] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=20.561)\nnoisy 의심: benign 55.9% / malicious 0.0%\n실제 noisy label 비율: 28.6%\n\n판단: Gotham2025 feature 0-6에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.2857142857142857
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p040_N500_s13.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 13,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [0, 2, 3] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [17, 18, 22] / bin: [37, 40, 41]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 26, 27] / bin: [0, 3, 5]\n\nbe/ma 분리도: 불명확 (overlap=39.460)\nnoisy 의심: benign 36.4% / malicious 0.5%\n실제 noisy label 비율: 29.7%\n\n판단: Gotham2025 feature 0-27에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.2971698113207547
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p035_N250_s0.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.35,
+    "n_sample": 250,
+    "seed": 0,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 35% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [7, 11, 13] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [33, 37, 43] / bin: [30, 31, 32]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 12] / bin: [5, 6, 7]\n\nbe/ma 분리도: 불명확 (overlap=71.066)\nnoisy 의심: benign 33.6% / malicious 5.9%\n실제 noisy label 비율: 19.3%\n\n판단: DoH2020 feature 0-12에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.19339622641509435
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p040_N1000_s8_w4.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 804,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [1, 2, 3] / bin: [0, 1, 5]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 16] / bin: [0, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 25, 26] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=34.939)\nnoisy 의심: benign 20.6% / malicious 20.3%\n실제 noisy label 비율: 30.5%\n\n판단: Gotham2025 feature 0-26에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.30504587155963303
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p045_N250_s18.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.45,
+    "n_sample": 250,
+    "seed": 18,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 45% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [2, 5, 6] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [3, 6, 16] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=61.036)\nnoisy 의심: benign 51.6% / malicious 0.0%\n실제 noisy label 비율: 38.0%\n\n판단: Gotham2025 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.38009049773755654
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p035_N1000_s5_w2.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.35,
+    "n_sample": 500,
+    "seed": 502,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 35% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 9] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [31, 43, 47] / bin: [18, 25, 26]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 48] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=65.673)\nnoisy 의심: benign 39.4% / malicious 0.0%\n실제 noisy label 비율: 20.3%\n\n판단: DoH2020 feature 0-48에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.2028301886792453
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p045_N1000_s1_w3.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.45,
+    "n_sample": 500,
+    "seed": 103,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 45% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 7, 8] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [7, 11, 28] / bin: [39, 40, 44]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=23.124)\nnoisy 의심: benign 50.9% / malicious 0.4%\n실제 noisy label 비율: 43.8%\n\n판단: Gotham2025 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.4376470588235294
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p030_N1000_s3.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.3,
+    "n_sample": 1000,
+    "seed": 3,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 30% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [7, 11, 13] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [11, 15, 17] / bin: [43, 45, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=72.943)\nnoisy 의심: benign 40.2% / malicious 1.6%\n실제 noisy label 비율: 17.9%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.17882352941176471
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p030_N500_s0.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 0,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 11, 13] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [23, 33, 37] / bin: [28, 30, 31]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 12] / bin: [11, 14, 29]\n\nbe/ma 분리도: 불명확 (overlap=67.906)\nnoisy 의심: benign 40.7% / malicious 0.0%\n실제 noisy label 비율: 12.5%\n\n판단: DoH2020 feature 0-12에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.125
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p035_N1000_s13.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.35,
+    "n_sample": 1000,
+    "seed": 13,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 35% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [2, 4, 5] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [15, 16, 17]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [1, 2, 3] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=28.992)\nnoisy 의심: benign 0.0% / malicious 48.4%\n실제 noisy label 비율: 24.8%\n\n판단: Gotham2025 feature 1-3에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.2479627473806752
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p020_N500_s2.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 2,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 9, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [4, 11, 23] / bin: [29, 30, 31]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=65.176)\nnoisy 의심: benign 36.7% / malicious 4.1%\n실제 noisy label 비율: 7.1%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.07075471698113207
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N1000_s13.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 1000,
+    "seed": 13,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [7, 9, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [35, 47, 49] / bin: [15, 16, 17]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 29] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=82.975)\nnoisy 의심: benign 34.9% / malicious 1.8%\n실제 noisy label 비율: 33.1%\n\n판단: DoH2020 feature 0-29에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3305882352941176
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p030_N1000_s19_w3.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 1903,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 9] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [2, 4, 17] / bin: [42, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 8] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=61.442)\nnoisy 의심: benign 18.7% / malicious 21.6%\n실제 noisy label 비율: 23.3%\n\n판단: DoH2020 feature 0-8에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.23349056603773585
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p025_N1000_s5_w2.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.25,
+    "n_sample": 500,
+    "seed": 502,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 25% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 7, 9] / bin: [0, 1, 4]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [5, 45, 46]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [46, 48, 49] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=37.259)\nnoisy 의심: benign 37.1% / malicious 0.5%\n실제 noisy label 비율: 12.1%\n\n판단: Gotham2025 feature 46-49에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.12093023255813953
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p030_N1000_s17_w1.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 1701,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 8, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [17, 21, 23] / bin: [31, 35, 37]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 28] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=65.487)\nnoisy 의심: benign 44.1% / malicious 1.3%\n실제 noisy label 비율: 13.9%\n\n판단: DoH2020 feature 0-28에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.1391509433962264
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N1000_s19_w3.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 1903,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 9, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [4, 10, 12] / bin: [43, 44, 45]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 8] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=62.423)\nnoisy 의심: benign 3.2% / malicious 38.2%\n실제 noisy label 비율: 35.4%\n\n판단: DoH2020 feature 0-8에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.35377358490566035
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p045_N1000_s4.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.45,
+    "n_sample": 1000,
+    "seed": 4,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 45% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 9] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [10, 11, 12] / bin: [1, 41, 42]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=52.200)\nnoisy 의심: benign 31.4% / malicious 10.8%\n실제 noisy label 비율: 34.7%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.34705882352941175
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p025_N1000_s9_w4.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.25,
+    "n_sample": 500,
+    "seed": 904,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 25% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 5, 6] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [20, 22, 29] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=40.311)\nnoisy 의심: benign 53.9% / malicious 0.0%\n실제 noisy label 비율: 9.4%\n\n판단: Gotham2025 feature 20-29에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.0944700460829493
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p040_N500_s5.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 5,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [2, 6, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [0, 7, 14] / bin: [1, 2, 3]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [2, 3, 14] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=28.296)\nnoisy 의심: benign 35.0% / malicious 0.0%\n실제 noisy label 비율: 33.4%\n\n판단: Gotham2025 feature 2-14에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.33410672853828305
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p040_N1000_s16_w3.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 1603,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [1, 2, 3] / bin: [0, 1, 24]\n\nCH2(malicious) 집중 구간:\n  feature: [16, 17, 18] / bin: [4, 5, 38]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [0, 3, 5]\n\nbe/ma 분리도: 불명확 (overlap=41.777)\nnoisy 의심: benign 31.2% / malicious 6.6%\n실제 noisy label 비율: 32.3%\n\n판단: Gotham2025 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3227990970654628
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p040_N500_s18.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 18,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 10, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 16] / bin: [2, 3, 4]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [24, 29, 31] / bin: [0, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=32.834)\nnoisy 의심: benign 47.5% / malicious 0.0%\n실제 noisy label 비율: 34.0%\n\n판단: Gotham2025 feature 24-31에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3395784543325527
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p025_N1000_s15_w4.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.25,
+    "n_sample": 500,
+    "seed": 1504,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 25% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [2, 3, 5] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 16] / bin: [5, 6, 7]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [24, 25, 26] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=34.914)\nnoisy 의심: benign 52.9% / malicious 0.0%\n실제 noisy label 비율: 10.5%\n\n판단: Gotham2025 feature 24-26에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.10465116279069768
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p030_N1000_s0.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.3,
+    "n_sample": 1000,
+    "seed": 0,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 30% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [7, 9, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [4, 17, 19] / bin: [29, 30, 31]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=63.816)\nnoisy 의심: benign 39.0% / malicious 1.2%\n실제 noisy label 비율: 14.9%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.14941176470588236
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N500_s2.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 2,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 9] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [12, 31, 39] / bin: [29, 32, 33]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 14] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=61.666)\nnoisy 의심: benign 2.3% / malicious 39.0%\n실제 noisy label 비율: 32.8%\n\n판단: DoH2020 feature 0-14에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3278301886792453
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N1000_s4_w2.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 402,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [6, 7, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [4, 10, 12] / bin: [41, 42, 43]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 15] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=46.661)\nnoisy 의심: benign 36.7% / malicious 2.9%\n실제 noisy label 비율: 29.9%\n\n판단: DoH2020 feature 0-15에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.2988235294117647
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p025_N1000_s19_w1.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.25,
+    "n_sample": 500,
+    "seed": 1901,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 25% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [0, 3, 5] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [2, 3, 4]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 18, 19] / bin: [0, 3, 7]\n\nbe/ma 분리도: 불명확 (overlap=35.166)\nnoisy 의심: benign 56.9% / malicious 0.0%\n실제 noisy label 비율: 13.1%\n\n판단: Gotham2025 feature 0-19에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.13145539906103287
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p025_N1000_s11_w2.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.25,
+    "n_sample": 500,
+    "seed": 1102,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 25% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [17, 19, 21] / bin: [26, 27, 28]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [3, 5, 6]\n\nbe/ma 분리도: 불명확 (overlap=66.504)\nnoisy 의심: benign 40.4% / malicious 0.5%\n실제 noisy label 비율: 13.4%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.13443396226415094
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p045_N1000_s3_w2.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.45,
+    "n_sample": 500,
+    "seed": 302,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 45% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 9] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [15, 17, 19] / bin: [1, 2, 10]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [1, 2, 7] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=49.348)\nnoisy 의심: benign 3.9% / malicious 40.1%\n실제 noisy label 비율: 46.2%\n\n판단: DoH2020 feature 1-7에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.46226415094339623
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p030_N1000_s5_w3.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 503,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 7, 10] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 35] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 20, 23] / bin: [0, 2, 11]\n\nbe/ma 분리도: 불명확 (overlap=40.855)\nnoisy 의심: benign 38.6% / malicious 0.0%\n실제 noisy label 비율: 13.4%\n\n판단: Gotham2025 feature 0-23에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.13443396226415094
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p035_N1000_s6_w4.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.35,
+    "n_sample": 500,
+    "seed": 604,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 35% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 9, 11] / bin: [0, 1, 5]\n\nCH2(malicious) 집중 구간:\n  feature: [13, 17, 25] / bin: [29, 30, 31]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=63.428)\nnoisy 의심: benign 1.0% / malicious 35.6%\n실제 noisy label 비율: 26.8%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.26823529411764707
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p030_N250_s1.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.3,
+    "n_sample": 250,
+    "seed": 1,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 30% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [3, 4, 7] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 16] / bin: [21, 22, 23]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 29] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=38.112)\nnoisy 의심: benign 48.5% / malicious 0.0%\n실제 noisy label 비율: 18.8%\n\n판단: Gotham2025 feature 0-29에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.18779342723004694
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p020_N1000_s7_w4.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 704,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [19, 27, 39] / bin: [27, 28, 30]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 14] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=65.563)\nnoisy 의심: benign 41.0% / malicious 0.5%\n실제 noisy label 비율: 6.6%\n\n판단: DoH2020 feature 0-14에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.0660377358490566
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p040_N1000_s0_w2.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 2,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [2, 3, 7] / bin: [0, 1, 4]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [11, 12, 17]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 13, 15] / bin: [0, 2, 10]\n\nbe/ma 분리도: 불명확 (overlap=32.321)\nnoisy 의심: benign 0.0% / malicious 48.7%\n실제 noisy label 비율: 34.3%\n\n판단: Gotham2025 feature 0-15에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3429844097995546
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p045_N1000_s12.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.45,
+    "n_sample": 1000,
+    "seed": 12,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 45% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [0, 1, 2] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [13, 14, 18] / bin: [0, 22, 23]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [1, 9, 14] / bin: [0, 6, 7]\n\nbe/ma 분리도: 불명확 (overlap=36.066)\nnoisy 의심: benign 0.0% / malicious 45.4%\n실제 noisy label 비율: 39.4%\n\n판단: Gotham2025 feature 1-14에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3939745075318656
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p025_N500_s6.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.25,
+    "n_sample": 500,
+    "seed": 6,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 25% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 7, 9] / bin: [0, 1, 27]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 7, 16] / bin: [11, 12, 13]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 26] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=29.882)\nnoisy 의심: benign 66.8% / malicious 2.4%\n실제 noisy label 비율: 14.4%\n\n판단: Gotham2025 feature 0-26에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.14382022471910114
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p040_N250_s19.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.4,
+    "n_sample": 250,
+    "seed": 19,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 40% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [1, 2, 3] / bin: [0, 2, 5]\n\nCH2(malicious) 집중 구간:\n  feature: [16, 19, 20] / bin: [30, 33, 34]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 27] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=42.549)\nnoisy 의심: benign 43.5% / malicious 0.0%\n실제 noisy label 비율: 28.6%\n\n판단: Gotham2025 feature 0-27에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.2863849765258216
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p030_N1000_s17_w2.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 1702,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 9, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [4, 15, 19] / bin: [46, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 12] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=52.742)\nnoisy 의심: benign 7.6% / malicious 30.8%\n실제 noisy label 비율: 19.3%\n\n판단: DoH2020 feature 0-12에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.19339622641509435
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p030_N250_s16.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.3,
+    "n_sample": 250,
+    "seed": 16,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 30% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [6, 7, 8] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [37, 43, 49] / bin: [28, 29, 30]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 24] / bin: [6, 7, 13]\n\nbe/ma 분리도: 불명확 (overlap=51.625)\nnoisy 의심: benign 42.4% / malicious 0.9%\n실제 noisy label 비율: 21.7%\n\n판단: DoH2020 feature 0-24에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.2169811320754717
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p020_N250_s4.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.2,
+    "n_sample": 250,
+    "seed": 4,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 20% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [7, 11, 13] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [19, 21, 27] / bin: [26, 27, 28]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 12] / bin: [3, 6, 7]\n\nbe/ma 분리도: 불명확 (overlap=62.908)\nnoisy 의심: benign 40.2% / malicious 0.0%\n실제 noisy label 비율: 1.9%\n\n판단: DoH2020 feature 0-12에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.018867924528301886
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p025_N1000_s3.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.25,
+    "n_sample": 1000,
+    "seed": 3,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 25% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [2, 3, 7] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [3, 4, 7] / bin: [12, 13, 14]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [1, 25, 26] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=31.768)\nnoisy 의심: benign 41.1% / malicious 0.2%\n실제 noisy label 비율: 12.3%\n\n판단: Gotham2025 feature 1-26에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.12338425381903642
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p030_N500_s18.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 18,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 9, 10] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [0, 2, 3]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [20, 29, 31] / bin: [0, 1, 3]\n\nbe/ma 분리도: 불명확 (overlap=36.147)\nnoisy 의심: benign 52.4% / malicious 0.0%\n실제 noisy label 비율: 24.8%\n\n판단: Gotham2025 feature 20-31에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.24778761061946902
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p035_N1000_s4_w4.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.35,
+    "n_sample": 500,
+    "seed": 404,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 35% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [1, 2, 3] / bin: [0, 2, 27]\n\nCH2(malicious) 집중 구간:\n  feature: [23, 43, 46] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 23, 43] / bin: [0, 5, 6]\n\nbe/ma 분리도: 불명확 (overlap=42.326)\nnoisy 의심: benign 35.4% / malicious 0.0%\n실제 noisy label 비율: 27.2%\n\n판단: Gotham2025 feature 0-43에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.27230046948356806
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p045_N1000_s16.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.45,
+    "n_sample": 1000,
+    "seed": 16,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 45% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [0, 8, 10] / bin: [0, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [26, 27, 31] / bin: [2, 3, 6]\n\nbe/ma 분리도: 불명확 (overlap=58.299)\nnoisy 의심: benign 4.0% / malicious 38.5%\n실제 noisy label 비율: 39.2%\n\n판단: DoH2020 feature 26-31에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.39176470588235296
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p020_N1000_s0_w2.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 2,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 7, 8] / bin: [0, 1, 4]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 16] / bin: [6, 7, 8]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [38, 42, 45] / bin: [0, 7, 8]\n\nbe/ma 분리도: 불명확 (overlap=33.419)\nnoisy 의심: benign 0.0% / malicious 45.1%\n실제 noisy label 비율: 9.7%\n\n판단: Gotham2025 feature 38-45에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.09744779582366589
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N250_s19.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 250,
+    "seed": 19,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [17, 19, 33] / bin: [2, 3, 6]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=81.032)\nnoisy 의심: benign 0.0% / malicious 47.3%\n실제 noisy label 비율: 30.7%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.30660377358490565
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p030_N500_s17.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 17,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [21, 25, 43] / bin: [27, 28, 29]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=63.130)\nnoisy 의심: benign 41.1% / malicious 5.2%\n실제 noisy label 비율: 17.5%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.17452830188679244
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p040_N1000_s12.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.4,
+    "n_sample": 1000,
+    "seed": 12,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 40% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [0, 1, 2] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [15, 17, 18] / bin: [24, 26, 27]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [2, 9, 14] / bin: [0, 24, 45]\n\nbe/ma 분리도: 불명확 (overlap=39.936)\nnoisy 의심: benign 34.7% / malicious 3.0%\n실제 noisy label 비율: 30.8%\n\n판단: Gotham2025 feature 2-14에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.308411214953271
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N1000_s0_w4.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 4,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 11, 13] / bin: [0, 1, 5]\n\nCH2(malicious) 집중 구간:\n  feature: [4, 11, 15] / bin: [46, 47, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 12] / bin: [2, 3, 6]\n\nbe/ma 분리도: 불명확 (overlap=54.406)\nnoisy 의심: benign 36.3% / malicious 3.8%\n실제 noisy label 비율: 25.2%\n\n판단: DoH2020 feature 0-12에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.25176470588235295
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N1000_s3_w4.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 304,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 9, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [35, 44, 49] / bin: [19, 20, 21]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 7] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=74.705)\nnoisy 의심: benign 35.8% / malicious 1.5%\n실제 noisy label 비율: 41.4%\n\n판단: DoH2020 feature 0-7에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.41411764705882353
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p020_N1000_s13_w4.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 1304,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [29, 39, 47] / bin: [25, 27, 28]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 14] / bin: [3, 5, 6]\n\nbe/ma 분리도: 불명확 (overlap=65.889)\nnoisy 의심: benign 38.1% / malicious 1.0%\n실제 noisy label 비율: 7.5%\n\n판단: DoH2020 feature 0-14에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.07529411764705882
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p020_N1000_s15.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.2,
+    "n_sample": 1000,
+    "seed": 15,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 20% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [3, 5, 6] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [0, 2, 3]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 8, 25] / bin: [0, 5, 15]\n\nbe/ma 분리도: 불명확 (overlap=44.894)\nnoisy 의심: benign 47.0% / malicious 0.0%\n실제 noisy label 비율: 5.9%\n\n판단: Gotham2025 feature 0-25에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.05875440658049354
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p020_N250_s16.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.2,
+    "n_sample": 250,
+    "seed": 16,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 20% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 9] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [37, 39, 49] / bin: [26, 27, 28]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 14] / bin: [12, 13, 15]\n\nbe/ma 분리도: 불명확 (overlap=61.616)\nnoisy 의심: benign 38.2% / malicious 3.6%\n실제 noisy label 비율: 12.3%\n\n판단: DoH2020 feature 0-14에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.12264150943396226
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p030_N250_s17.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.3,
+    "n_sample": 250,
+    "seed": 17,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 30% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [6, 7, 9] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [4, 15, 23] / bin: [31, 32, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 10] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=47.741)\nnoisy 의심: benign 38.0% / malicious 4.5%\n실제 noisy label 비율: 20.8%\n\n판단: DoH2020 feature 0-10에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.20754716981132076
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p025_N500_s18.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.25,
+    "n_sample": 500,
+    "seed": 18,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 25% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 9, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [4, 19, 33] / bin: [44, 45, 46]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=60.784)\nnoisy 의심: benign 39.8% / malicious 1.4%\n실제 noisy label 비율: 15.6%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.15566037735849056
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p035_N1000_s11_w2.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.35,
+    "n_sample": 500,
+    "seed": 1102,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 35% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 6, 7] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [0, 3, 7] / bin: [0, 4, 9]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [13, 25, 29] / bin: [0, 1, 3]\n\nbe/ma 분리도: 불명확 (overlap=41.536)\nnoisy 의심: benign 0.0% / malicious 48.1%\n실제 noisy label 비율: 26.6%\n\n판단: Gotham2025 feature 13-29에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.26635514018691586
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p020_N1000_s17_w2.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 1702,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 7, 9] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [0, 11, 40]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [8, 11, 26] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=41.639)\nnoisy 의심: benign 42.5% / malicious 0.0%\n실제 noisy label 비율: 10.6%\n\n판단: Gotham2025 feature 8-26에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.10574712643678161
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p020_N1000_s14_w2.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 1402,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 7, 9] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [3, 22, 41] / bin: [0, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=37.612)\nnoisy 의심: benign 40.4% / malicious 0.0%\n실제 noisy label 비율: 8.4%\n\n판단: Gotham2025 feature 3-41에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.08391608391608392
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p020_N1000_s8_w1.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 801,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 6, 7] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [0, 16, 17]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 24, 29] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=41.429)\nnoisy 의심: benign 48.4% / malicious 0.0%\n실제 noisy label 비율: 12.3%\n\n판단: Gotham2025 feature 0-29에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.12264150943396226
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p030_N500_s3.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 3,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 11, 13] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [11, 15, 17] / bin: [45, 46, 47]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 12] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=77.750)\nnoisy 의심: benign 38.6% / malicious 1.9%\n실제 noisy label 비율: 17.9%\n\n판단: DoH2020 feature 0-12에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.1792452830188679
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p030_N1000_s13_w2.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 1302,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [6, 7, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [17, 19, 25] / bin: [35, 36, 37]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 16] / bin: [5, 6, 7]\n\nbe/ma 분리도: 불명확 (overlap=62.660)\nnoisy 의심: benign 36.4% / malicious 2.9%\n실제 noisy label 비율: 18.2%\n\n판단: DoH2020 feature 0-16에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.18160377358490565
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p030_N500_s19.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 19,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [9, 11, 15] / bin: [45, 46, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=67.403)\nnoisy 의심: benign 33.9% / malicious 4.5%\n실제 noisy label 비율: 17.5%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.17452830188679244
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p025_N1000_s14_w4.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.25,
+    "n_sample": 500,
+    "seed": 1404,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 25% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 7, 9] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 16] / bin: [0, 12, 13]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [1, 8, 9] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=34.114)\nnoisy 의심: benign 0.0% / malicious 37.5%\n실제 noisy label 비율: 12.6%\n\n판단: Gotham2025 feature 1-9에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.1261682242990654
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p030_N1000_s11_w2.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 1102,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [17, 19, 21] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [3, 5, 6]\n\nbe/ma 분리도: 불명확 (overlap=61.446)\nnoisy 의심: benign 40.5% / malicious 1.8%\n실제 noisy label 비율: 20.8%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.20754716981132076
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p035_N500_s1.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.35,
+    "n_sample": 500,
+    "seed": 1,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 35% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 10, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [3, 5, 6] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 8, 34] / bin: [3, 15, 17]\n\nbe/ma 분리도: 불명확 (overlap=47.827)\nnoisy 의심: benign 56.7% / malicious 0.0%\n실제 noisy label 비율: 24.0%\n\n판단: Gotham2025 feature 0-34에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.24
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p020_N1000_s10_w3.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 1003,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [15, 19, 21] / bin: [42, 45, 46]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 28] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=67.288)\nnoisy 의심: benign 37.8% / malicious 0.5%\n실제 noisy label 비율: 6.4%\n\n판단: DoH2020 feature 0-28에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.06367924528301887
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p020_N250_s3.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.2,
+    "n_sample": 250,
+    "seed": 3,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 20% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [2, 3, 6] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [1, 2, 7] / bin: [43, 44, 48]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [12, 13, 14] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=25.663)\nnoisy 의심: benign 46.5% / malicious 0.0%\n실제 noisy label 비율: 4.6%\n\n판단: Gotham2025 feature 12-14에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.04608294930875576
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p025_N250_s5.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.25,
+    "n_sample": 250,
+    "seed": 5,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 25% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [7, 8, 11] / bin: [0, 1, 3]\n\nCH2(malicious) 집중 구간:\n  feature: [9, 11, 21] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 12] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=51.143)\nnoisy 의심: benign 29.7% / malicious 9.9%\n실제 noisy label 비율: 15.1%\n\n판단: DoH2020 feature 0-12에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.1509433962264151
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p025_N1000_s13.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.25,
+    "n_sample": 1000,
+    "seed": 13,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 25% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [17, 19, 25] / bin: [29, 30, 44]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 30] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=64.248)\nnoisy 의심: benign 38.1% / malicious 1.4%\n실제 noisy label 비율: 11.1%\n\n판단: DoH2020 feature 0-30에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.11058823529411765
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p045_N1000_s8_w1.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.45,
+    "n_sample": 500,
+    "seed": 801,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 45% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 6, 10] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [7, 33, 48] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 3, 6] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=24.650)\nnoisy 의심: benign 50.3% / malicious 0.0%\n실제 noisy label 비율: 47.1%\n\n판단: Gotham2025 feature 0-6에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.4707259953161593
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N1000_s1_w1.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 101,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 8, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [17, 19, 21] / bin: [6, 11, 13]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [25, 26, 30] / bin: [0, 47, 48]\n\nbe/ma 분리도: 불명확 (overlap=65.976)\nnoisy 의심: benign 19.7% / malicious 20.7%\n실제 noisy label 비율: 40.5%\n\n판단: DoH2020 feature 25-30에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.405152224824356
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p045_N250_s4.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.45,
+    "n_sample": 250,
+    "seed": 4,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 45% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [7, 11, 13] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [27, 33, 41] / bin: [26, 27, 28]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 12] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=65.588)\nnoisy 의심: benign 38.5% / malicious 2.8%\n실제 noisy label 비율: 29.2%\n\n판단: DoH2020 feature 0-12에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.29245283018867924
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N1000_s6_w3.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 603,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [11, 16, 18] / bin: [0, 28, 29]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 14] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=51.617)\nnoisy 의심: benign 0.5% / malicious 37.0%\n실제 noisy label 비율: 33.7%\n\n판단: DoH2020 feature 0-14에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.33726415094339623
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p020_N1000_s4_w4.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 404,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [1, 3, 5] / bin: [0, 2, 27]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 16] / bin: [45, 46, 47]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 46] / bin: [5, 6, 7]\n\nbe/ma 분리도: 불명확 (overlap=38.600)\nnoisy 의심: benign 46.3% / malicious 0.0%\n실제 noisy label 비율: 8.0%\n\n판단: Gotham2025 feature 0-46에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.08
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p020_N1000_s1.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.2,
+    "n_sample": 1000,
+    "seed": 1,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 20% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [7, 9, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [4, 11, 19] / bin: [38, 39, 46]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 24] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=63.744)\nnoisy 의심: benign 37.4% / malicious 2.4%\n실제 noisy label 비율: 6.6%\n\n판단: DoH2020 feature 0-24에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.06588235294117648
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p030_N1000_s11_w3.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 1103,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 9, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [19, 21, 25] / bin: [29, 30, 31]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 30] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=62.136)\nnoisy 의심: benign 38.8% / malicious 1.9%\n실제 noisy label 비율: 21.0%\n\n판단: DoH2020 feature 0-30에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.2099056603773585
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p045_N1000_s7_w2.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.45,
+    "n_sample": 500,
+    "seed": 702,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 45% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 8] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [2, 4, 6] / bin: [0, 26, 27]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 13] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=42.954)\nnoisy 의심: benign 1.9% / malicious 38.0%\n실제 noisy label 비율: 43.6%\n\n판단: DoH2020 feature 0-13에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.4363207547169811
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p020_N500_s12.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 12,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [4, 17, 39] / bin: [37, 38, 39]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=65.737)\nnoisy 의심: benign 40.4% / malicious 0.5%\n실제 noisy label 비율: 7.8%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.07783018867924528
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N1000_s3_w1.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 301,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 11, 13] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [21, 33, 41] / bin: [45, 46, 47]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 13] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=65.338)\nnoisy 의심: benign 40.5% / malicious 0.0%\n실제 noisy label 비율: 32.1%\n\n판단: DoH2020 feature 0-13에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.32075471698113206
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p045_N1000_s6_w1.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.45,
+    "n_sample": 500,
+    "seed": 601,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 45% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [6, 7, 8] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [2, 4, 13] / bin: [0, 2, 25]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [3, 6, 7] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=31.597)\nnoisy 의심: benign 9.9% / malicious 29.2%\n실제 noisy label 비율: 41.2%\n\n판단: Gotham2025 feature 3-7에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.4117647058823529
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p025_N1000_s8_w3.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.25,
+    "n_sample": 500,
+    "seed": 803,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 25% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [43, 45, 47] / bin: [12, 13, 14]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 14] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=61.888)\nnoisy 의심: benign 38.1% / malicious 1.0%\n실제 noisy label 비율: 10.8%\n\n판단: DoH2020 feature 0-14에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.10849056603773585
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p035_N500_s7.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.35,
+    "n_sample": 500,
+    "seed": 7,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 35% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 11, 13] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [17, 19, 43] / bin: [26, 27, 28]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 30] / bin: [2, 3, 5]\n\nbe/ma 분리도: 불명확 (overlap=64.273)\nnoisy 의심: benign 33.9% / malicious 9.2%\n실제 noisy label 비율: 21.2%\n\n판단: DoH2020 feature 0-30에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.21226415094339623
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p035_N1000_s10.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.35,
+    "n_sample": 1000,
+    "seed": 10,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 35% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [3, 4, 5] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [0, 8, 10]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [24, 25, 26] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=38.899)\nnoisy 의심: benign 37.0% / malicious 0.0%\n실제 noisy label 비율: 24.4%\n\n판단: Gotham2025 feature 24-26에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.24364896073903003
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p020_N1000_s12_w3.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 1203,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 9] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [4, 19, 25] / bin: [45, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 30] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=68.072)\nnoisy 의심: benign 39.0% / malicious 0.9%\n실제 noisy label 비율: 8.0%\n\n판단: DoH2020 feature 0-30에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.08
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p030_N1000_s16_w1.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 1601,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [1, 2, 3] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [2, 6, 7] / bin: [38, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 13] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=33.651)\nnoisy 의심: benign 59.6% / malicious 0.0%\n실제 noisy label 비율: 23.0%\n\n판단: Gotham2025 feature 0-13에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.2300469483568075
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p020_N1000_s17_w4.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 1704,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 11, 13] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [19, 21, 29] / bin: [24, 26, 38]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 20] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=65.541)\nnoisy 의심: benign 39.6% / malicious 0.5%\n실제 noisy label 비율: 5.9%\n\n판단: DoH2020 feature 0-20에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.0589622641509434
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p035_N1000_s18_w1.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.35,
+    "n_sample": 500,
+    "seed": 1801,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 35% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 5, 6] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 39] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 26, 46] / bin: [2, 4, 5]\n\nbe/ma 분리도: 불명확 (overlap=48.106)\nnoisy 의심: benign 48.6% / malicious 0.0%\n실제 noisy label 비율: 25.5%\n\n판단: Gotham2025 feature 0-46에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.25526932084309134
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p030_N1000_s15_w2.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 1502,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [4, 11, 15] / bin: [45, 46, 47]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=67.637)\nnoisy 의심: benign 13.9% / malicious 27.5%\n실제 noisy label 비율: 21.2%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.21226415094339623
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N250_s13.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 250,
+    "seed": 13,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [6, 7, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [20, 33, 38] / bin: [3, 25, 27]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=53.960)\nnoisy 의심: benign 40.2% / malicious 6.4%\n실제 noisy label 비율: 30.7%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.30660377358490565
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p045_N500_s18.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.45,
+    "n_sample": 500,
+    "seed": 18,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 45% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [6, 7, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [39, 43, 49] / bin: [4, 12, 16]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 8, 10] / bin: [0, 14, 15]\n\nbe/ma 분리도: 불명확 (overlap=57.658)\nnoisy 의심: benign 37.4% / malicious 0.0%\n실제 noisy label 비율: 37.5%\n\n판단: DoH2020 feature 0-10에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.375
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p025_N250_s15.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.25,
+    "n_sample": 250,
+    "seed": 15,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 25% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [7, 8, 11] / bin: [0, 1, 4]\n\nCH2(malicious) 집중 구간:\n  feature: [17, 19, 21] / bin: [34, 35, 36]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 12] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=50.174)\nnoisy 의심: benign 41.3% / malicious 0.0%\n실제 noisy label 비율: 4.2%\n\n판단: DoH2020 feature 0-12에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.04245283018867924
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p045_N250_s14.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.45,
+    "n_sample": 250,
+    "seed": 14,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 45% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [5, 8, 9] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [36, 44, 49] / bin: [0, 47, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [1, 2, 3] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=22.232)\nnoisy 의심: benign 49.5% / malicious 0.0%\n실제 noisy label 비율: 38.7%\n\n판단: Gotham2025 feature 1-3에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3870967741935484
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N1000_s18.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 1000,
+    "seed": 18,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [7, 9, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [39, 43, 48] / bin: [11, 19, 20]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [25, 29, 31] / bin: [0, 37, 38]\n\nbe/ma 분리도: 불명확 (overlap=67.593)\nnoisy 의심: benign 37.3% / malicious 3.2%\n실제 noisy label 비율: 34.5%\n\n판단: DoH2020 feature 25-31에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3447058823529412
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p040_N1000_s17_w3.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 1703,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 7, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [14, 21, 24] / bin: [2, 7, 8]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 6] / bin: [0, 1, 7]\n\nbe/ma 분리도: 불명확 (overlap=44.726)\nnoisy 의심: benign 37.2% / malicious 0.0%\n실제 noisy label 비율: 35.8%\n\n판단: Gotham2025 feature 0-6에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3581395348837209
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p035_N1000_s10_w2.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.35,
+    "n_sample": 500,
+    "seed": 1002,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 35% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 10, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [4, 9, 19] / bin: [45, 46, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=50.144)\nnoisy 의심: benign 41.8% / malicious 2.6%\n실제 noisy label 비율: 29.0%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.29009433962264153
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p030_N250_s17.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.3,
+    "n_sample": 250,
+    "seed": 17,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 30% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [1, 7, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 7, 16] / bin: [0, 8, 9]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [1, 13, 15] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=31.812)\nnoisy 의심: benign 0.0% / malicious 41.3%\n실제 noisy label 비율: 21.8%\n\n판단: Gotham2025 feature 1-15에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.21818181818181817
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p030_N1000_s12_w4.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 1204,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [2, 3, 4] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 16] / bin: [11, 12, 13]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 25] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=33.342)\nnoisy 의심: benign 17.9% / malicious 22.4%\n실제 noisy label 비율: 13.6%\n\n판단: Gotham2025 feature 0-25에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.13647058823529412
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p020_N500_s17.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 17,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [21, 25, 33] / bin: [39, 40, 41]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 30] / bin: [13, 15, 29]\n\nbe/ma 분리도: 불명확 (overlap=63.581)\nnoisy 의심: benign 39.7% / malicious 1.8%\n실제 noisy label 비율: 6.8%\n\n판단: DoH2020 feature 0-30에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.06839622641509434
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p025_N250_s18.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.25,
+    "n_sample": 250,
+    "seed": 18,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 25% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [7, 10, 13] / bin: [0, 1, 3]\n\nCH2(malicious) 집중 구간:\n  feature: [37, 47, 49] / bin: [21, 22, 23]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 12] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=46.999)\nnoisy 의심: benign 44.3% / malicious 0.0%\n실제 noisy label 비율: 14.6%\n\n판단: DoH2020 feature 0-12에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.14622641509433962
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p045_N250_s16.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.45,
+    "n_sample": 250,
+    "seed": 16,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 45% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 9] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [14, 20, 36] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [0, 1, 2]\n\nbe/ma 분리도: 명확 (overlap=0.000)\nnoisy 의심: benign 7.4% / malicious 28.2%\n실제 noisy label 비율: 48.1%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.4811320754716981
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N1000_s0_w2.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 2,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 9] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [6, 10, 11] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 9, 28] / bin: [2, 6, 7]\n\nbe/ma 분리도: 불명확 (overlap=72.773)\nnoisy 의심: benign 32.3% / malicious 0.6%\n실제 noisy label 비율: 33.3%\n\n판단: DoH2020 feature 0-28에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.33254716981132076
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p045_N250_s0.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.45,
+    "n_sample": 250,
+    "seed": 0,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 45% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [7, 11, 13] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [10, 23, 43] / bin: [29, 30, 43]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 6, 14] / bin: [5, 6, 7]\n\nbe/ma 분리도: 불명확 (overlap=69.005)\nnoisy 의심: benign 14.3% / malicious 26.2%\n실제 noisy label 비율: 31.6%\n\n판단: DoH2020 feature 0-14에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3160377358490566
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p020_N500_s9.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 9,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [2, 3, 7] / bin: [0, 1, 8]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 7, 20] / bin: [3, 4, 44]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [25, 28, 31] / bin: [0, 5, 25]\n\nbe/ma 분리도: 불명확 (overlap=41.319)\nnoisy 의심: benign 31.6% / malicious 6.1%\n실제 noisy label 비율: 7.9%\n\n판단: Gotham2025 feature 25-31에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.07906976744186046
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p045_N1000_s3.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.45,
+    "n_sample": 1000,
+    "seed": 3,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 45% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [5, 6, 7] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [0, 2, 7] / bin: [0, 38, 39]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [12, 13, 14] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=27.745)\nnoisy 의심: benign 44.3% / malicious 0.0%\n실제 noisy label 비율: 38.2%\n\n판단: Gotham2025 feature 12-14에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3823870220162225
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p030_N1000_s15_w1.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 1501,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [6, 7, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [17, 29, 33] / bin: [40, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=59.812)\nnoisy 의심: benign 39.4% / malicious 1.4%\n실제 noisy label 비율: 18.9%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.18867924528301888
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p025_N500_s15.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.25,
+    "n_sample": 500,
+    "seed": 15,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 25% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [17, 21, 41] / bin: [27, 40, 47]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 12] / bin: [4, 13, 14]\n\nbe/ma 분리도: 불명확 (overlap=60.917)\nnoisy 의심: benign 39.3% / malicious 0.9%\n실제 noisy label 비율: 7.3%\n\n판단: DoH2020 feature 0-12에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.07311320754716981
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p045_N1000_s12_w2.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.45,
+    "n_sample": 500,
+    "seed": 1202,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 45% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 10, 11] / bin: [0, 1, 3]\n\nCH2(malicious) 집중 구간:\n  feature: [25, 29, 33] / bin: [1, 2, 19]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=40.000)\nnoisy 의심: benign 42.9% / malicious 1.3%\n실제 noisy label 비율: 40.8%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.4080188679245283
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p045_N500_s7.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.45,
+    "n_sample": 500,
+    "seed": 7,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 45% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 10, 11] / bin: [0, 1, 27]\n\nCH2(malicious) 집중 구간:\n  feature: [37, 38, 41] / bin: [0, 47, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=20.918)\nnoisy 의심: benign 59.4% / malicious 0.0%\n실제 noisy label 비율: 36.2%\n\n판단: Gotham2025 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3623529411764706
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p025_N1000_s4_w3.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.25,
+    "n_sample": 500,
+    "seed": 403,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 25% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 5, 6] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [4, 7, 12]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 27, 31] / bin: [2, 3, 5]\n\nbe/ma 분리도: 불명확 (overlap=33.464)\nnoisy 의심: benign 0.0% / malicious 38.9%\n실제 noisy label 비율: 14.7%\n\n판단: Gotham2025 feature 0-31에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.14699331848552338
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p020_N500_s13.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 13,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [2, 3, 4] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 16] / bin: [17, 18, 19]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 25, 26] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=27.532)\nnoisy 의심: benign 65.6% / malicious 1.7%\n실제 noisy label 비율: 8.6%\n\n판단: Gotham2025 feature 0-26에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.08616780045351474
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p035_N1000_s13_w3.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.35,
+    "n_sample": 500,
+    "seed": 1303,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 35% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 4, 5] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 7, 22] / bin: [0, 6, 7]\n\nbe/ma 분리도: 불명확 (overlap=37.190)\nnoisy 의심: benign 49.8% / malicious 0.0%\n실제 noisy label 비율: 21.4%\n\n판단: Gotham2025 feature 0-22에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.21411764705882352
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N1000_s13_w4.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 1304,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 9, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [31, 39, 47] / bin: [22, 27, 28]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 14] / bin: [4, 5, 6]\n\nbe/ma 분리도: 불명확 (overlap=70.136)\nnoisy 의심: benign 37.8% / malicious 0.5%\n실제 noisy label 비율: 30.7%\n\n판단: DoH2020 feature 0-14에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.30660377358490565
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p045_N1000_s15_w1.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.45,
+    "n_sample": 500,
+    "seed": 1501,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 45% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 9, 10] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [7, 18, 19] / bin: [1, 2, 3]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 7, 15] / bin: [0, 3, 6]\n\nbe/ma 분리도: 불명확 (overlap=32.357)\nnoisy 의심: benign 0.0% / malicious 51.3%\n실제 noisy label 비율: 38.4%\n\n판단: Gotham2025 feature 0-15에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3835616438356164
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p045_N1000_s11.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.45,
+    "n_sample": 1000,
+    "seed": 11,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 45% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [3, 10, 11] / bin: [0, 1, 3]\n\nCH2(malicious) 집중 구간:\n  feature: [3, 5, 7] / bin: [10, 11, 12]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [0, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=23.858)\nnoisy 의심: benign 0.0% / malicious 54.1%\n실제 noisy label 비율: 46.4%\n\n판단: Gotham2025 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.4635838150289017
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p030_N1000_s17_w4.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.3,
+    "n_sample": 500,
+    "seed": 1704,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 30% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 6, 7] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [3, 5, 7] / bin: [10, 11, 38]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [8, 11, 26] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=32.013)\nnoisy 의심: benign 44.9% / malicious 0.0%\n실제 noisy label 비율: 17.9%\n\n판단: Gotham2025 feature 8-26에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.17906976744186046
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p020_N1000_s9_w1.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 901,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [2, 3, 4] / bin: [0, 1, 8]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 7, 16] / bin: [3, 4, 5]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [27, 47, 48] / bin: [0, 17, 18]\n\nbe/ma 분리도: 불명확 (overlap=40.345)\nnoisy 의심: benign 43.5% / malicious 0.0%\n실제 noisy label 비율: 10.8%\n\n판단: Gotham2025 feature 27-48에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.107981220657277
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p030_N1000_s5.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.3,
+    "n_sample": 1000,
+    "seed": 5,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 30% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [7, 9, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [4, 13, 19] / bin: [42, 45, 47]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 12] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=64.040)\nnoisy 의심: benign 35.2% / malicious 5.1%\n실제 noisy label 비율: 18.8%\n\n판단: DoH2020 feature 0-12에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.18823529411764706
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p020_N500_s1.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 1,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 9, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [15, 19, 23] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 12] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=63.331)\nnoisy 의심: benign 36.7% / malicious 2.0%\n실제 noisy label 비율: 7.1%\n\n판단: DoH2020 feature 0-12에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.07075471698113207
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N1000_s7.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 1000,
+    "seed": 7,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [6, 7, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [35, 39, 43] / bin: [20, 26, 27]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 14] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=60.963)\nnoisy 의심: benign 46.0% / malicious 0.6%\n실제 noisy label 비율: 30.5%\n\n판단: DoH2020 feature 0-14에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.30470588235294116
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p035_N1000_s9_w4.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.35,
+    "n_sample": 500,
+    "seed": 904,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 35% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [3, 5, 6] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [3, 11, 17] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=37.135)\nnoisy 의심: benign 35.5% / malicious 0.0%\n실제 noisy label 비율: 18.0%\n\n판단: Gotham2025 feature 3-17에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.18032786885245902
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p035_N250_s12.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.35,
+    "n_sample": 250,
+    "seed": 12,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 35% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [0, 1, 2] / bin: [0, 1, 31]\n\nCH2(malicious) 집중 구간:\n  feature: [2, 4, 7] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [1, 2, 4] / bin: [0, 1, 2]\n\nbe/ma 분리도: 불명확 (overlap=27.498)\nnoisy 의심: benign 0.0% / malicious 45.8%\n실제 noisy label 비율: 29.2%\n\n판단: Gotham2025 feature 1-4에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.29245283018867924
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p020_N1000_s7.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.2,
+    "n_sample": 1000,
+    "seed": 7,
+    "question": "이 트래픽 density map에서 benign으로 레이블됐지만 malicious 영역에 있는 샘플(noisy benign)과 malicious로 레이블됐지만 benign 영역에 있는 샘플(noisy malicious)의 비율을 추정해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 20% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [2, 3, 7] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 7, 16] / bin: [2, 3, 4]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 25, 26] / bin: [0, 3, 6]\n\nbe/ma 분리도: 불명확 (overlap=43.133)\nnoisy 의심: benign 65.8% / malicious 0.0%\n실제 noisy label 비율: 9.6%\n\n판단: Gotham2025 feature 0-26에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.09606481481481481
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p020_N1000_s18_w3.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.2,
+    "n_sample": 500,
+    "seed": 1803,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 20% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [21, 23, 39] / bin: [24, 25, 26]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=64.064)\nnoisy 의심: benign 42.5% / malicious 0.0%\n실제 noisy label 비율: 10.6%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.10613207547169812
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N500_s15.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 15,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 9] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [33, 41, 47] / bin: [30, 31, 32]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 12] / bin: [5, 6, 7]\n\nbe/ma 분리도: 불명확 (overlap=65.681)\nnoisy 의심: benign 37.4% / malicious 4.1%\n실제 noisy label 비율: 25.7%\n\n판단: DoH2020 feature 0-12에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.25707547169811323
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p040_N1000_s14.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.4,
+    "n_sample": 1000,
+    "seed": 14,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 40% / N=1000\n\nCH1(benign) 집중 구간:\n  feature: [9, 10, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [5, 6, 7] / bin: [0, 3, 4]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [8, 25, 26] / bin: [0, 14, 15]\n\nbe/ma 분리도: 불명확 (overlap=46.438)\nnoisy 의심: benign 48.8% / malicious 1.2%\n실제 noisy label 비율: 32.3%\n\n판단: Gotham2025 feature 8-26에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3234624145785877
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p045_N250_s14.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.45,
+    "n_sample": 250,
+    "seed": 14,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 45% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [7, 8, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [23, 25, 31] / bin: [47, 48, 49]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 12, 14] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=38.848)\nnoisy 의심: benign 41.0% / malicious 0.0%\n실제 noisy label 비율: 39.2%\n\n판단: DoH2020 feature 0-14에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3915094339622642
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p025_N1000_s17_w3.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.25,
+    "n_sample": 500,
+    "seed": 1703,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 25% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 9, 11] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [4, 11, 21] / bin: [28, 29, 37]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 20] / bin: [12, 13, 15]\n\nbe/ma 분리도: 불명확 (overlap=70.260)\nnoisy 의심: benign 36.4% / malicious 2.9%\n실제 noisy label 비율: 15.3%\n\n판단: DoH2020 feature 0-20에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.15330188679245282
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N500_s9.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 9,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [7, 11, 13] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [29, 31, 43] / bin: [22, 24, 25]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [8, 12, 30] / bin: [0, 5, 6]\n\nbe/ma 분리도: 불명확 (overlap=50.574)\nnoisy 의심: benign 1.9% / malicious 38.4%\n실제 noisy label 비율: 30.4%\n\n판단: DoH2020 feature 8-30에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3035294117647059
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p040_N500_s7.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.4,
+    "n_sample": 500,
+    "seed": 7,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 40% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 13] / bin: [0, 1, 49]\n\nCH2(malicious) 집중 구간:\n  feature: [17, 19, 43] / bin: [46, 47, 48]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 30] / bin: [2, 3, 5]\n\nbe/ma 분리도: 불명확 (overlap=66.631)\nnoisy 의심: benign 34.5% / malicious 7.1%\n실제 noisy label 비율: 30.2%\n\n판단: DoH2020 feature 0-30에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.3018867924528302
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p025_N1000_s15_w3.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.25,
+    "n_sample": 500,
+    "seed": 1503,
+    "question": "이 density map에서 CH1(benign)과 CH2(malicious)가 가장 밀집된 feature 구간을 찾고, noisy label이 집중된 영역을 설명해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 25% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 11] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [4, 13, 21] / bin: [46, 47, 48]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 2] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=50.903)\nnoisy 의심: benign 18.6% / malicious 21.2%\n실제 noisy label 비율: 11.1%\n\n판단: DoH2020 feature 0-2에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.11084905660377359
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/Gotham2025_p035_N500_s13.png",
+    "dataset": "Gotham2025",
+    "noise_rate": 0.35,
+    "n_sample": 500,
+    "seed": 13,
+    "question": "CH3(differential map)에서 경계가 불명확한 구간(값이 0에 가까운 곳)이 어디인지 찾고, 이 구간의 noisy label 위험도를 평가해줘.",
+    "answer": "[density map 분석 결과]\n데이터셋: Gotham2025 / 노이즈율: 35% / N=500\n\nCH1(benign) 집중 구간:\n  feature: [2, 3, 4] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [17, 18, 19] / bin: [0, 4, 39]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 15, 21] / bin: [0, 3, 5]\n\nbe/ma 분리도: 불명확 (overlap=42.785)\nnoisy 의심: benign 34.6% / malicious 2.6%\n실제 noisy label 비율: 24.1%\n\n판단: Gotham2025 feature 0-21에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.24065420560747663
+  },
+  {
+    "image": "/home/oper/VLM_IDS/data/images/DoH2020_p020_N250_s11.png",
+    "dataset": "DoH2020",
+    "noise_rate": 0.2,
+    "n_sample": 250,
+    "seed": 11,
+    "question": "이 네트워크 트래픽 density map을 분석해서 noisy label 탐지 결과를 요약해줘. CH1은 benign, CH2는 malicious, CH3는 차이 맵이야.",
+    "answer": "[density map 분석 결과]\n데이터셋: DoH2020 / 노이즈율: 20% / N=250\n\nCH1(benign) 집중 구간:\n  feature: [5, 7, 9] / bin: [0, 1, 2]\n\nCH2(malicious) 집중 구간:\n  feature: [3, 4, 21] / bin: [45, 46, 47]\n\nCH3 경계 불명확 구간 (noisy label 위험 높음):\n  feature: [0, 1, 12] / bin: [1, 2, 3]\n\nbe/ma 분리도: 불명확 (overlap=48.641)\nnoisy 의심: benign 32.0% / malicious 10.4%\n실제 noisy label 비율: 12.3%\n\n판단: DoH2020 feature 0-12에서 noisy 집중. 상위 20% 제거 권장.",
+    "noisy_rate_actual": 0.12264150943396226
+  }
+]

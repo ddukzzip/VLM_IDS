@@ -1,0 +1,138 @@
+{
+  "DoH2020": {
+    "250": {
+      "0.2": {
+        "xgboost": 0.8449,
+        "mlp": 0.7533,
+        "extratrees": 0.8597
+      },
+      "0.3": {
+        "xgboost": 0.7383,
+        "mlp": 0.681,
+        "extratrees": 0.758
+      },
+      "0.4": {
+        "xgboost": 0.6219,
+        "mlp": 0.6074,
+        "extratrees": 0.6403
+      },
+      "0.45": {
+        "xgboost": 0.557,
+        "mlp": 0.5386,
+        "extratrees": 0.572
+      }
+    },
+    "500": {
+      "0.2": {
+        "xgboost": 0.859,
+        "mlp": 0.6987,
+        "extratrees": 0.8785
+      },
+      "0.3": {
+        "xgboost": 0.7577,
+        "mlp": 0.6475,
+        "extratrees": 0.7856
+      },
+      "0.4": {
+        "xgboost": 0.6402,
+        "mlp": 0.6118,
+        "extratrees": 0.6493
+      },
+      "0.45": {
+        "xgboost": 0.5785,
+        "mlp": 0.5186,
+        "extratrees": 0.5813
+      }
+    },
+    "1000": {
+      "0.2": {
+        "xgboost": 0.883,
+        "mlp": 0.7841,
+        "extratrees": 0.8983
+      },
+      "0.3": {
+        "xgboost": 0.781,
+        "mlp": 0.6498,
+        "extratrees": 0.8077
+      },
+      "0.4": {
+        "xgboost": 0.6538,
+        "mlp": 0.5817,
+        "extratrees": 0.6671
+      },
+      "0.45": {
+        "xgboost": 0.5858,
+        "mlp": 0.5226,
+        "extratrees": 0.5874
+      }
+    }
+  },
+  "Gotham2025": {
+    "250": {
+      "0.2": {
+        "xgboost": 0.951,
+        "mlp": 0.9061,
+        "extratrees": 0.929
+      },
+      "0.3": {
+        "xgboost": 0.8875,
+        "mlp": 0.8072,
+        "extratrees": 0.8653
+      },
+      "0.4": {
+        "xgboost": 0.7472,
+        "mlp": 0.648,
+        "extratrees": 0.7375
+      },
+      "0.45": {
+        "xgboost": 0.625,
+        "mlp": 0.5437,
+        "extratrees": 0.616
+      }
+    },
+    "500": {
+      "0.2": {
+        "xgboost": 0.9608,
+        "mlp": 0.9246,
+        "extratrees": 0.9527
+      },
+      "0.3": {
+        "xgboost": 0.9253,
+        "mlp": 0.8919,
+        "extratrees": 0.911
+      },
+      "0.4": {
+        "xgboost": 0.8106,
+        "mlp": 0.6829,
+        "extratrees": 0.8038
+      },
+      "0.45": {
+        "xgboost": 0.7086,
+        "mlp": 0.5726,
+        "extratrees": 0.6929
+      }
+    },
+    "1000": {
+      "0.2": {
+        "xgboost": 0.9705,
+        "mlp": 0.9195,
+        "extratrees": 0.9681
+      },
+      "0.3": {
+        "xgboost": 0.9464,
+        "mlp": 0.8844,
+        "extratrees": 0.9359
+      },
+      "0.4": {
+        "xgboost": 0.8364,
+        "mlp": 0.7009,
+        "extratrees": 0.8213
+      },
+      "0.45": {
+        "xgboost": 0.7021,
+        "mlp": 0.5789,
+        "extratrees": 0.7007
+      }
+    }
+  }
+}

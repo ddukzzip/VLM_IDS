@@ -1,0 +1,54 @@
+{
+  "DoH2020": {
+    "0.2": {
+      "baseline": 0.9281,
+      "standard": 0.9635,
+      "vlm": 0.9551,
+      "remove_pct": 37.2
+    },
+    "0.3": {
+      "baseline": 0.8478,
+      "standard": 0.9466,
+      "vlm": 0.9412,
+      "remove_pct": 38.4
+    },
+    "0.4": {
+      "baseline": 0.7045,
+      "standard": 0.849,
+      "vlm": 0.8529,
+      "remove_pct": 36.5
+    },
+    "0.45": {
+      "baseline": 0.62,
+      "standard": 0.7543,
+      "vlm": 0.7397,
+      "remove_pct": 26.9
+    }
+  },
+  "Gotham2025": {
+    "0.2": {
+      "baseline": 0.9712,
+      "standard": 0.8841,
+      "vlm": 0.6104,
+      "remove_pct": 34.4
+    },
+    "0.3": {
+      "baseline": 0.946,
+      "standard": 0.813,
+      "vlm": 0.8132,
+      "remove_pct": 24.0
+    },
+    "0.4": {
+      "baseline": 0.832,
+      "standard": 0.8457,
+      "vlm": 0.762,
+      "remove_pct": 32.0
+    },
+    "0.45": {
+      "baseline": 0.7096,
+      "standard": 0.6692,
+      "vlm": 0.6638,
+      "remove_pct": 41.5
+    }
+  }
+}
