@@ -1,0 +1,3 @@
+[submodule "LabelDiffusion"]
+	path = LabelDiffusion
+	url = https://github.com/ddukzzip/LabelDiffusion.git
